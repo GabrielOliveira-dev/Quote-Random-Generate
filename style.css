@@ -8,7 +8,6 @@
     padding: 0;
     margin: 0;
     font-size: 16px;
-    font-family: poppins, sans-serif,monospace;
     box-sizing: border-box;
 }
 
@@ -19,13 +18,15 @@ h1 {
     font-size: 2.15rem;
     color: var(--color-title);
     text-align: center;
-    margin-bottom: 25px
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif,monospace;
 }
 
 main {
     width: 100%;
     height: 100vh;
     background-color: var(--background-color);
+    font-family: 'Poppins', sans-serif,monospace;
 
 
     display: flex;
@@ -35,17 +36,21 @@ main {
 
 main #quote-section {
     width: 600px;
-    padding: 30px;
+    padding: 30px 30px 25px;
     border-radius: 15px;
+    box-shadow: 0 12px 35px rgb(0 0 0 / 10%);
+    font-family: 'Poppins', sans-serif,monospace;
 
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.6);
     
 }
 
 main #quote-section .quote-area p {
+    margin-top: 20px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif,monospace;
 }
 
 main #quote-section .quote-area p::before {
@@ -63,6 +68,8 @@ main #quote-section .quote-area p::after {
 main #quote-section .author-area p {
     text-align: right;
     margin-bottom: 25px;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif,monospace;
 }
 main #quote-section .author-area p::before {
     content: "―";
@@ -70,14 +77,39 @@ main #quote-section .author-area p::before {
 }
 
 .button-area {
+    padding-top: 20px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
     border-top: 1px solid #ccc;
+    font-family: 'Poppins', sans-serif,monospace;
+}
+
+.button-area .clipboard-box button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: 2px solid var(--background-color);
+    border-radius: 70px;
+    color: var(--background-color);
+
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+.button-area .clipboard-box button:hover {
+    background-color: var(--background-color);
+    color: white
 }
 
 
 
-.button-area #newQuote {
+.button-area #new-quote {
     padding: 13px 22px;
     border: none;
     border-radius: 30px;
@@ -85,5 +117,6 @@ main #quote-section .author-area p::before {
     background-color: var(--background-color);
     color: white;
 
-    margin-top: 15px;
+    cursor: pointer;
+    user-select: none;
 }

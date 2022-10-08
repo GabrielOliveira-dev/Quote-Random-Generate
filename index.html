@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
     <title>Quote Random Generator</title>
 </head>
@@ -13,18 +15,21 @@
         <section id="quote-section">
             <div class="quote-area">
                 <h1>Quote of the Day</h1>
-                <p>Never give up because you never know if the next try is going to be the one that works</p>
+                <p id="text-quote">Loading...</p>
             </div>
             <div class="author-area">
-                <p>Mary Kay Ash</p>
+                <p id="author-quote">Loading...</p>
             </div>
             <div class="button-area">
+                <div class="clipboard-box">
+                    <button id="clipboard"><i class="icon-copy icon-1x"></i></button>
+                </div>
                 <div class=""newQuote-box>
-                <button id="newQuote">New Quote</button>
+                    <button id="new-quote">New Quote</button>
                 </div>
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
